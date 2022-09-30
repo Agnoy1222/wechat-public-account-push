@@ -68,11 +68,6 @@ const USER_CONFIG = {
       id: 'oB1QI6svRoAfQeKWOA4_TrWmU6Bw',
       // 你想对他发送的模板消息的模板ID
       useTemplateId: '8KpNYyrI6PlWZ31C6SPx7vCxuvjaYN6U652Rnf7yNno',
-            name: '老婆1',
-      // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oB1QI6tbEpLxuOqB3qbMeLQURO7g',
-      // 你想对他发送的模板消息的模板ID
-      useTemplateId: '8KpNYyrI6PlWZ31C6SPx7vCxuvjaYN6U652Rnf7yNno',
       // 所在省份
       province: '云南',
       // 所在城市
@@ -218,16 +213,149 @@ const USER_CONFIG = {
     },
     {
       name: '老婆1',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
+      id: 'oB1QI6tbEpLxuOqB3qbMeLQURO7g',
+      useTemplateId: '8KpNYyrI6PlWZ31C6SPx7vCxuvjaYN6U652Rnf7yNno',
+           province: '云南',
+      // 所在城市
+      city: '昆明',
+      // 新历生日, 仅用作获取星座运势, 格式必须
+      horoscopeDate: '03-17',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+      openUrl: 'https://www.yunshidaquan.cn/yunshichaxun/shuangyu/',
+      // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '宝贝', year: '2002', date: '03-17',
+        },
+        {
+          type: '节日', name: '相遇纪念日', year: '2022', date: '09-22',
+        },
+
+      ],
+      // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
+      customizedDateList: [
+        // 相遇的日子
+        { keyword: 'love_day', date: '2022-09-22' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2022-09-09' },
+      ],
+      // 课程表相关配置
+      // 如果courseSchedule不存在或者为空（null）则认为没有课程
+      // 如果courseSchedule是一个数组，则认为不区分单双周，直接填写星期几对应的课表数据即可
+      // 如果courseSchedule是一个对象（如下面所示）
+      courseSchedule: {
+        // 单双周的基准
+        benchmark: {
+          // 这里设置一个日期，用来作为判断课表是否单双周的依据
+          date: '2022-09-23',
+          // 该日期是否为单周
+          isOdd: true
+        },
+        // 课表
+        courses: {
+          // 单周课表
+          // 从星期一到星期日（星期六和星期日的课表数组可不填写）
+          odd: [
+            // 例子，周一的课表
+            [
+              '外科学李武妹',
+              '外科学李武妹',
+              '药理学子潇扬',
+              '药理学子潇扬',
+              '自习',
+              '自习',
+            ],
+            // 周二
+            [
+              '外科学李武妹',
+              '外科学李武妹',
+              '医学影像成像原理苏敏吉',
+              '医学影像成像原理苏敏吉',
+              '放射治疗技术苏敏吉',
+              '放射治疗技术苏敏吉',
+            ],
+            // 周三
+            [
+              '药理学子潇扬',
+              '药理学子潇扬',
+              '体育李建涛',
+              '体育李建涛',
+              '医学影像诊断学苏敏吉',
+              '医学影像诊断学苏敏吉',
+            ],
+            // 周四
+            [
+              '医学影像成像原理苏敏吉',
+              '医学影像成像原理苏敏吉',
+              '放射治疗技术苏敏吉',
+              '放射治疗技术苏敏吉',
+              '医学影像诊断学苏敏吉',
+              '医学影像诊断学苏敏吉',
+            ],
+            // 周五
+            [
+              '医用物理学子潇扬',
+              '医用物理学子潇扬',
+              '自习',
+              '自习',
+              '医学影像设备苏敏吉',
+              '医学影像设备苏敏吉',
+            ],
+         
+          ],
+          // 双周课表
+          even: [
+            //周一的课表
+            [
+              '外科学李武妹',
+              '外科学李武妹',
+              '药理学子潇扬',
+              '药理学子潇扬',
+              '自习',
+              '自习',
+            ],
+           // 周二
+            [
+              '外科学李武妹',
+              '外科学李武妹',
+              '医学影像成像原理苏敏吉',
+              '医学影像成像原理苏敏吉',
+              '放射治疗技术苏敏吉',
+              '放射治疗技术苏敏吉',
+            ],
+            // 周三
+            [
+              '药理学子潇扬',
+              '药理学子潇扬',
+              '体育李建涛',
+              '体育李建涛',
+              '医学影像诊断学苏敏吉',
+              '医学影像诊断学苏敏吉',
+            ],
+            // 周四
+            [
+              '医学影像成像原理苏敏吉',
+              '医学影像成像原理苏敏吉',
+              '放射治疗技术苏敏吉',
+              '放射治疗技术苏敏吉',
+              '医学影像诊断学苏敏吉',
+              '医学影像诊断学苏敏吉',
+            ],
+            // 周五
+            [
+              '医用物理学子潇扬',
+              '医用物理学子潇扬',
+              '自习',
+              '自习',
+              '医学影像设备苏敏吉',
+              '医学影像设备苏敏吉',
+            ],
+          ]
+        }
+      },
     },
     {
       name: '老婆2',
@@ -264,7 +392,7 @@ const USER_CONFIG = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: 'biQkomyt3i01GIgK6HpD_h_QMtlPxBiKX60aR6v5Dfw',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
