@@ -25,11 +25,11 @@ const USER_CONFIG = {
 
     /** 节假日 */
     // 下一休息日综合提醒
-    holidaytts: true,
+    holidaytts: false,
 
     /** 每日N句 */
     // 金山每日一句
-    CIBA: true,
+    CIBA: false,
     // 每日一言
     oneTalk: false,
     // 土味情话(彩虹屁)
@@ -71,7 +71,7 @@ const USER_CONFIG = {
       // 所在省份
       province: '云南',
       // 所在城市
-      city: '嵩明',
+      city: '昆明',
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '03-17',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -250,7 +250,7 @@ const USER_CONFIG = {
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
   PROVINCE: '云南',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: '嵩明',
+  CITY: '昆明',
 
   /** 重要节日相关 */
 
