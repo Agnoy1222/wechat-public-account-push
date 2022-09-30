@@ -7,12 +7,12 @@ const USER_CONFIG = {
   // 公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: '',
+  APP_ID: 'wx646c5b5153c5e81d',
 
   // 公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: '',
+  APP_SECRET: 'f731772484a5cb3cda3c7cbce8337614',
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
@@ -33,7 +33,7 @@ const USER_CONFIG = {
     // 每日一言
     oneTalk: false,
     // 土味情话(彩虹屁)
-    earthyLoveWords: false,
+    earthyLoveWords: true,
     // 朋友圈文案
     momentCopyrighting: false,
     // 毒鸡汤
@@ -42,13 +42,13 @@ const USER_CONFIG = {
     poetry: false,
 
     /** 星座运势 */
-    horoscope: false,
+    horoscope: true,
 
     /** 生日消息和节日消息 */
     birthdayMessage: true,
 
     // 学生课表
-    courseSchedule: false,
+    courseSchedule: true,
   },
 
   /** 每日一言 */
@@ -65,27 +65,27 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '老婆0',
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oB1QI6tbEpLxuOqB3qbMeLQURO7g',
       // 你想对他发送的模板消息的模板ID
       useTemplateId: '',
       // 所在省份
-      province: '广东',
+      province: '云南',
       // 所在城市
-      city: '肇庆',
+      city: '嵩明',
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '12-27',
+      horoscopeDate: '03-17',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: 'https://wangxinleo.cn',
+      openUrl: 'https://www.yunshidaquan.cn/yunshichaxun/shuangyu/',
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '老婆', year: '1996', date: '09-09',
+          type: '*生日', name: '宝贝', year: '2002', date: '03-17',
         },
         {
-          type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
+          type: '节日', name: '相遇纪念日', year: '2022', date: '09-22',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
@@ -97,12 +97,10 @@ const USER_CONFIG = {
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
+        // 相遇的日子
+        { keyword: 'love_day', date: '2022-09-22' },
         // 结婚纪念日
         { keyword: 'marry_day', date: '2022-09-09' },
-        // 退伍日
-        { keyword: 'ex_day', date: '2022-09-10' }
       ],
       // 课程表相关配置
       // 如果courseSchedule不存在或者为空（null）则认为没有课程
@@ -123,39 +121,50 @@ const USER_CONFIG = {
           odd: [
             // 例子，周一的课表
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '外科学李武妹',
+              '外科学李武妹'
+              '药理学子潇扬'
+              '药理学子潇扬'
+              '自习'
+              '自习'
             ],
             // 周二
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '外科学李武妹',
+              '外科学李武妹'
+              '医学影像成像原理苏敏吉'
+              '医学影像成像原理苏敏吉'
+              '放射治疗技术苏敏吉'
+              '放射治疗技术苏敏吉'
             ],
             // 周三
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '药理学子潇扬',
+              '药理学子潇扬'
+              '体育李建涛'
+              '体育李建涛'
+              '医学影像诊断学苏敏吉'
+              '医学影像诊断学苏敏吉'
             ],
             // 周四
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '医学影像成像原理苏敏吉',
+              '医学影像成像原理苏敏吉'
+              '放射治疗技术苏敏吉'
+              '放射治疗技术苏敏吉'
+              '医学影像诊断学苏敏吉'
+              '医学影像诊断学苏敏吉'
             ],
             // 周五
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '医用物理学子潇扬',
+              '医用物理学子潇扬'
+              '自习'
+              '自习'
+              '医学影像设备苏敏吉'
+              '医学影像设备苏敏吉'
             ],
-            // 周六
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周日
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ]
+         
           ],
           // 双周课表
           even: [
@@ -239,9 +248,9 @@ const USER_CONFIG = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: '广东',
+  PROVINCE: '云南',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: '惠州',
+  CITY: '嵩明',
 
   /** 重要节日相关 */
 
@@ -295,12 +304,10 @@ const USER_CONFIG = {
    * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }}
    * */
   CUSTOMIZED_DATE_LIST: [
-    // 在一起的日子
-    { keyword: 'love_day', date: '2022-09-08' },
+    // 相遇的日子
+    { keyword: 'love_day', date: '2022-09-22' },
     // 结婚纪念日
     { keyword: 'marry_day', date: '2022-09-09' },
-    // 退伍日
-    { keyword: 'ex_day', date: '2022-09-10' }
     // 你可以不断按格式往下增加
     // ...
   ],
