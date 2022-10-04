@@ -214,7 +214,7 @@ const USER_CONFIG = {
     {
       name: '老婆1',
       id: 'oB1QI6tbEpLxuOqB3qbMeLQURO7g',
-      useTemplateId: '8KpNYyrI6PlWZ31C6SPx7vCxuvjaYN6U652Rnf7yNno',
+      useTemplateId: 'qMveGdWgzkE6RKQ8wnldif05n9ItfM4ax3f2pHD_CM4',
            province: '云南',
       // 所在城市
       city: '昆明',
