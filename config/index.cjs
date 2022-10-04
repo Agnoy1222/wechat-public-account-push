@@ -240,7 +240,7 @@ const USER_CONFIG = {
         // 相遇的日子
         { keyword: 'love_day', date: '2022-09-22' },
         // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
+        { keyword: 'marry_day', date: '2022-10-02' },
       ],
       // 课程表相关配置
       // 如果courseSchedule不存在或者为空（null）则认为没有课程
