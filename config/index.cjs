@@ -381,10 +381,10 @@ const USER_CONFIG = {
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
     {
-      type: '*生日', name: '老婆', year: '1996', date: '09-09', isShowAge: true,
+      type: '*生日', name: '老婆', year: '2000', date: '04-17', isShowAge: true,
     },
     {
-      type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
+      type: '节日', name: '相遇纪念日', year: '2022', date: '11-14',
     },
 
     // 你可以不断按格式往下增加
@@ -406,9 +406,9 @@ const USER_CONFIG = {
    * */
   CUSTOMIZED_DATE_LIST: [
     // 相遇的日子
-    { keyword: 'love_day', date: '2022-09-22' },
+    { keyword: 'love_day', date: '2022-11-14' },
     // 结婚纪念日
-    { keyword: 'marry_day', date: '2022-09-09' },
+    { keyword: 'marry_day', date: '2022-11-14' },
     // 你可以不断按格式往下增加
     // ...
   ],
