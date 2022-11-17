@@ -302,13 +302,17 @@ const USER_CONFIG = {
     {
       name: '老婆2',
       id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      useTemplateId: 'qMveGdWgzkE6RKQ8wnldif05n9ItfM4ax3f2pHD_CM4',
+      province: '湖南',
+      city: '永州',
+      horoscopeDate: '03-01',
+      horoscopeDateType: '今日',
       openUrl: 'https://wangxinleo.cn',
-      festivals: [],
+      festivals: [
+      { keyword: 'love_day', date: '2022-11-18' },
+      
+    
+      ],
       customizedDateList: [],
       courseSchedule: null
     },
