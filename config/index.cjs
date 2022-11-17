@@ -301,8 +301,8 @@ const USER_CONFIG = {
     },
     {
       name: '老婆2',
-      id: '',
-      useTemplateId: 'qMveGdWgzkE6RKQ8wnldif05n9ItfM4ax3f2pHD_CM4',
+      id: 'oB1QI6s-FVmqjii39g4gSw_I5AF0',
+      useTemplateId: '	oDHWNTBYNN-Or080AaRkPiCU1zcKEPGxWX9LJC52itI',
       province: '湖南',
       city: '永州',
       horoscopeDate: '03-01',
@@ -346,7 +346,7 @@ const USER_CONFIG = {
       // 一般都填自己
       name: '自己',
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oB1QI6tbEpLxuOqB3qbMeLQURO7g',
     }
     // 你可以不断按格式往下增加
     // ...
