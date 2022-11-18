@@ -302,7 +302,7 @@ const USER_CONFIG = {
     {
       name: '小唐同学',
      id: 'oB1QI6s-FVmqjii39g4gSw_I5AF0',
-      useTemplateId: 'oDHWNTBYNN-Or080AaRkPiCU1zcKEPGxWX9LJC52itI',
+      useTemplateId: 't1Or7ydDLfnMyG8NoFmqSdYs0d7EjxxdOix2rkkRrTI',
            province: '湖南',
       // 所在城市
       city: '永州',
@@ -429,7 +429,7 @@ const USER_CONFIG = {
     {
       name: '小唐同学反馈',
      id: 'oB1QI6jNTMxiek88wgAGsIgamjaY',
-      useTemplateId: 'oDHWNTBYNN-Or080AaRkPiCU1zcKEPGxWX9LJC52itI',
+      useTemplateId: 't1Or7ydDLfnMyG8NoFmqSdYs0d7EjxxdOix2rkkRrTI',
            province: '湖南',
       // 所在城市
       city: '永州',
