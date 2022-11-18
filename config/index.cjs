@@ -316,7 +316,7 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '小唐同学', year: '2004', date: '03-01',
+          type: '生日', name: '小唐同学', year: '2004', date: '03-01',
         },
         {
           type: '节日', name: '相遇纪念日', year: '2022', date: '11-18',
@@ -443,7 +443,7 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '小唐同学', year: '2004', date: '03-01',
+          type: '生日', name: '小唐同学', year: '2004', date: '03-01',
         },
         {
           type: '节日', name: '相遇纪念日', year: '2022', date: '11-18',
@@ -609,7 +609,7 @@ const USER_CONFIG = {
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
     {
-      type: '*生日', name: '老婆', year: '2004', date: '02-27', isShowAge: true,
+      type: '*生日', name: '老婆', year: '', date: '', isShowAge: true,
     },
     {
       type: '节日', name: '相遇纪念日', year: '2022', date: '11-14',
