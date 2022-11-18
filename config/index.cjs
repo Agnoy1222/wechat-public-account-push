@@ -302,7 +302,7 @@ const USER_CONFIG = {
     {
       name: '小唐同学',
      id: 'oB1QI6s-FVmqjii39g4gSw_I5AF0',
-      useTemplateId: '	oDHWNTBYNN-Or080AaRkPiCU1zcKEPGxWX9LJC52itI',
+      useTemplateId: 'oDHWNTBYNN-Or080AaRkPiCU1zcKEPGxWX9LJC52itI',
            province: '湖南',
       // 所在城市
       city: '永州',
@@ -348,8 +348,11 @@ const USER_CONFIG = {
           odd: [
                    // 例子，周一的课表
             [
-              '生理学王迪8：00~9：50',
-              '大学语文钱怡10：10~12:00',
+              '儿科护理学蔡建8：00~9：30',
+              '胡产科护理唐玲芳9：40~11：10',
+              '康复护理吴燕11：20~12：00',
+              '护理基本技术高颖14：30~16：00',
+              '体育3吴燕16：10~17：40',
             ],
             // 周二
             [
