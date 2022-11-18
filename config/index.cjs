@@ -428,8 +428,8 @@ const USER_CONFIG = {
     },
     {
       name: '小唐同学反馈',
-     id: 'oB1QI6s-FVmqjii39g4gSw_I5AF0',
-      useTemplateId: 'oB1QI6jNTMxiek88wgAGsIgamjaY',
+     id: 'oB1QI6jNTMxiek88wgAGsIgamjaY',
+      useTemplateId: 'oDHWNTBYNN-Or080AaRkPiCU1zcKEPGxWX9LJC52itI',
            province: '湖南',
       // 所在城市
       city: '永州',
@@ -474,7 +474,7 @@ const USER_CONFIG = {
           // 从星期一到星期日（星期六和星期日的课表数组可不填写）
           odd: [
                    // 例子，周一的课表
-            [
+        [
               '儿科护理学蔡建8：00~9：30',
               '胡产科护理唐玲芳9：40~11：10',
               '康复护理吴燕11：20~12：00',
@@ -512,7 +512,8 @@ const USER_CONFIG = {
          
           ],
           // 双周课表
-          even:  [        // 例子，周一的课表
+          even: [
+                  // 例子，周一的课表
             [
               '儿科护理学蔡建8：00~9：30',
               '胡产科护理唐玲芳9：40~11：10',
@@ -548,7 +549,6 @@ const USER_CONFIG = {
               '护理管理谷小雷14：30~15：10',
               '急危重症护理周艳云16：10~17：40',
             ],
-         
           ],
         }
       },
